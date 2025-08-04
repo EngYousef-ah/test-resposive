@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header__img {
+  height: 8rem;
+  width: auto;
+}
+@media only screen and (max-width: 530px) {
+  .header__img {
+    height: 6rem;
+  }
+}
+.header__details {
+  display: flex;
+  gap: 3rem;
+  font-size: 1.6rem;
+}
+@media only screen and (max-width: 800px) {
+  .header__details {
+    gap: 0;
+  }
+}
+.header__item {
+  list-style: none;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+}
+@media only screen and (max-width: 400px) {
+  .header__item {
+    padding: 0.5rem 1rem;
+  }
+}
+.header__item:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+.header__link {
+  color: #eee;
+  text-decoration: none;
+}
+.header__call {
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.8rem;
+}
+@media only screen and (max-width: 530px) {
+  .header__call {
+    display: none;
+  }
+}
+.header__call--name {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+.header__call--phone {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.section__solarPanel {
+  color: #eee;
+  padding-left: 15rem;
+  padding-top: 20rem;
+  line-height: 1.2;
+}
+@media only screen and (max-width: 1000px) {
+  .section__solarPanel {
+    padding-left: 10rem;
+    padding-top: 12rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .section__solarPanel {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 4rem;
+  }
+}
+.section__solarPanel .heading-primary {
+  font-size: 4.5rem;
+  width: 59rem;
+  margin-bottom: 2.2rem;
+  letter-spacing: 3px;
+}
+@media only screen and (max-width: 1000px) {
+  .section__solarPanel .heading-primary {
+    font-size: 3.8rem;
+    width: 50rem;
+    letter-spacing: 2px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .section__solarPanel .heading-primary {
+    font-size: 2.6rem;
+    letter-spacing: 0;
+    width: 90%;
+  }
+}
+.section__solarPanel .heading-secondary {
+  font-size: 2.3rem;
+  width: 70rem;
+  margin-bottom: 2.2rem;
+  font-weight: lighter;
+}
+@media only screen and (max-width: 1000px) {
+  .section__solarPanel .heading-secondary {
+    font-size: 1.7rem;
+    width: 50rem;
+    letter-spacing: 1px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .section__solarPanel .heading-secondary {
+    font-size: 1.6rem;
+    letter-spacing: 0;
+    width: 90%;
+  }
+}
+.section__solarPanel .btn {
+  display: flex;
+  gap: 2.5rem;
+}
+@media only screen and (max-width: 600px) {
+  .section__solarPanel .btn {
+    gap: 2rem;
+  }
+}
+.section__solarPanel .btn__priamry {
+  color: #eee;
+  font-size: 1.4rem;
+  background-color: rgb(60, 171, 144);
+  padding: 1.2rem 3.4rem;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.1s;
+}
+.section__solarPanel .btn__priamry:hover {
+  background-color: #0b9586;
+  box-shadow: 0 0.5rem 2rem rgba(255, 255, 255, 0.4);
+}
+.section__solarPanel .btn__priamry:active, .section__solarPanel .btn__priamry:visited {
+  transform: translateY(3px);
+  box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.5);
+}
+.section__solarPanel .btn__secondary {
+  font-size: 1.4rem;
+  background-color: rgba(255, 187, 28, 0.9411764706);
+  color: #2a3334;
+  padding: 1.2rem 3.4rem;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.1s;
+}
+.section__solarPanel .btn__secondary:hover {
+  background-color: rgba(255, 197, 61, 0.9411764706);
+  box-shadow: 0 0.5rem 2rem rgba(255, 255, 255, 0.4);
+}
+.section__solarPanel .btn__secondary:active, .section__solarPanel .btn__secondary:visited {
+  transform: translateY(3px);
+  box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.5);
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0b9586;
+  width: 100%;
+  height: 8rem;
+}
+@media only screen and (max-width: 530px) {
+  .header {
+    justify-content: space-between;
+  }
+}
+
+.section__solarPanel {
+  background-color: wheat;
+  height: 100vh;
+  background-image: url(../images/header.png);
+  background-size: cover;
+}
+
+/*# sourceMappingURL=style.css.map */
